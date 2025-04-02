@@ -12,6 +12,5 @@ This type of shift register is commonly used in applications where data needs to
 
 **simulation results:**
 
-
-**schematic:**
+![image](https://github.com/user-attachments/assets/5406f16d-4958-4883-a424-67ba6dfd9dd8)
 
