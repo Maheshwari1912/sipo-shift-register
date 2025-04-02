@@ -1,0 +1,22 @@
+module sipo_tb();
+reg clk;
+reg rst;
+reg in;
+wire [3:0] out;
+sipo dut (clk,rst,in,out);
+always #5 clk=~clk;
+initial begin
+clk=0; rst=1;
+in=0;
+#10 rst=0;
+in=1; #10;
+$display("parallel output: %b", out);
+in=0; #10;
+$display("parallel output: %b", out);
+in=1; #10;
+$display("parallel output: %b", out);
+in=0; #10;
+$display("parallel output: %b", out);
+$finish;
+end
+endmodule
